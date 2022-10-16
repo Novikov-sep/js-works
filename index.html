@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221016133832">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Выбор цвет по клику</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Список покупок</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Работа со временем</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Тест</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="main__slider swiper">
+				<div class="main__wrapper swiper-wrapper">
+					<div class="main__slide swiper-slide">
+						<div class="page__hex hex">
+							<div class="hex__shell">
+								<div class="hex__text">Этот текст будет менять цвет</div>
+							</div>
+							<div class="hex__body">
+								<div class="hex__title main-title">Смените текст на фигуру</div>
+								<div class="hex__figures">
+									<div class="hex__figure figure-hex__square"></div>
+									<div class="hex__figure figure-hex__rectangle"></div>
+									<div class="hex__figure figure-hex__round"></div>
+									<div class="hex__figure figure-hex__oval"></div>
+								</div>
+								<div class="hex__title main-title">Выберите цвет из предложенных</div>
+								<div class="hex__items">
+									<div class="hex__item"></div>
+									<div class="hex__item"></div>
+									<div class="hex__item"></div>
+									<div class="hex__item"></div>
+									<div class="hex__item"></div>
+									<div class="hex__item"></div>
+									<div class="hex__item"></div>
+									<div class="hex__item"></div>
+									<div class="hex__item"></div>
+								</div>
+								<button class="hex__random">Сгенерировать случайный цвет</button>
+							</div>
+						</div>
+					</div>
+					<div class="main__slide swiper-slide">
+						<div class="page__todo todo">
+							<div class="todo__body">
+								<ul class="todo__shell">
+									<li class="todo__list">Молоко</li>
+									<li class="todo__list">Хлеб</li>
+									<li class="todo__list">Печенье</li>
+									<li class="todo__list">Конфеты</li>
+									<li class="todo__list">Сахар</li>
+									<li class="todo__list">Масло</li>
+									<li class="todo__list">Сыр</li>
+									<li class="todo__list">Колбаса</li>
+								</ul>
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input todo__input">
+								<div class="buttons">
+									<div class="todo__add">Добавить пункт</div>
+									<div class="todo__delete">Удалить выделенные пункты</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__slide swiper-slide">
+						<div class="page__time time">
+							<div class="time__title main-title">Работа со временем</div>
+							<div class="time__shell">
+								<div data-tabs class="time">
+									<nav data-tabs-titles class="time__navigation">
+										<button type="button" class="time__tab-title _tab-active">Секундомер</button>
+										<button type="button" class="time__tab-title">Таймер</button>
+										<button type="button" class="time__tab-title">часы</button>
+									</nav>
+									<div data-tabs-body class="time__content">
+										<div class="time__body">
+											<div class="time__stopwatch stopwatch">
+												<div class="stopwatch__hour">00</div>
+												<div class="stopwatch__minute">00</div>
+												<div class="stopwatch__sec">00</div>
+												<div class="stopwatch__milisec">00</div>
+											</div>
+											<div class="time__buttons">
+												<div class="time__start">Старт</div>
+												<div class="time__pause">Пауза</div>
+												<div class="time__stop">Стоп</div>
+												<button class="time__save-time">Записать результат и не останавливать
+													секундомер</button>
+												<button class="time__save-time-continue">Записать результат и остановить
+													секундомер</button>
+												<button class="time__save-time-stop">Записать результат и сбросить
+													секундомер</button>
+											</div>
+											<div class="time__save-time-body"></div>
+										</div>
+										<div class="time__body">
+											<div class="time__timer timer">
+												<div class="timer__body">
+													<div class="timer__hour">00</div>
+													<div class="timer__minute">00</div>
+													<div class="timer__sec">00</div>
+												</div>
+												<div class="time__line">
+													<label for="timer-hour">Введите часы</label>
+													<input autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="" class="input timer__input timer__input-hour" id="timer-hour">
+												</div>
+												<div class="time__line">
+													<label for="timer-minute">Введите минуты</label>
+													<input autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="" class="input timer__input timer__input-minute" id="timer-minute">
+												</div>
+												<div class="time__line">
+													<label for="timer-sec">Введите секунды</label>
+													<input autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="" class="input timer__input timer__input-sec" id="timer-sec">
+												</div>
+												<div class="timer__buttons">
+													<button class="timer__button timer__start">Запустить таймер</button>
+													<button class="timer__button timer__stop">Сбросить таймер</button>
+												</div>
+											</div>
+										</div>
+										<div class="time__body">
+											<div class="time__clock clock">
+												<div class="clock__body">
+													<div class="clock__item"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__slide swiper-slide">
+						<div class="page__qwiz qwiz">
+							<div class="qwiz__doby">
+								<div class="qwiz__header">
+									<h2 class="qwiz__title">Загружаю вопрос</h2>
+									<h2 class="qwiz__result-title"></h2>
+									<h3 class="qwiz__summary"></h3>
+									<p class="qwiz__result"></p>
+								</div>
+								<ul class="qwiz__list">
+									<li>
+										<label>
+											<input autocomplete="off" type="radio" name="form[]" data-error="Ошибка" placeholder="" class="qwiz__answer">
+											<span>Загружаю ответ</span>
+										</label>
+									</li>
+								</ul>
+								<button class="qwiz__submit">Следующий вопрос</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221016133832"></script>
+</body>
+
+</html>
